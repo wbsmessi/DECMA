@@ -12,6 +12,9 @@
 		19E781BA1EE567020086D254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E781B81EE567020086D254 /* Main.storyboard */; };
 		19E781BC1EE567020086D254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E781BB1EE567020086D254 /* Assets.xcassets */; };
 		19E781BF1EE567020086D254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E781BD1EE567020086D254 /* LaunchScreen.storyboard */; };
+		19E781C71EE5671B0086D254 /* DECTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E781C61EE5671B0086D254 /* DECTopBarView.swift */; };
+		19E781C91EE5677E0086D254 /* DECGuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E781C81EE5677E0086D254 /* DECGuidePageViewController.swift */; };
+		19E781CD1EEE32430086D254 /* TopBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E781CC1EEE32430086D254 /* TopBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		19E781BB1EE567020086D254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19E781BE1EE567020086D254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19E781C01EE567020086D254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19E781C61EE5671B0086D254 /* DECTopBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DECTopBarView.swift; sourceTree = "<group>"; };
+		19E781C81EE5677E0086D254 /* DECGuidePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DECGuidePageViewController.swift; sourceTree = "<group>"; };
+		19E781CC1EEE32430086D254 /* TopBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		19E781B31EE567020086D254 /* DECMA */ = {
 			isa = PBXGroup;
 			children = (
+				19E781CB1EE56FD80086D254 /* 顶部导航 */,
+				19E781CA1EE56FD10086D254 /* 引导页 */,
 				19E781B41EE567020086D254 /* AppDelegate.swift */,
 				19E781B61EE567020086D254 /* ViewController.swift */,
 				19E781B81EE567020086D254 /* Main.storyboard */,
@@ -62,6 +70,23 @@
 				19E781C01EE567020086D254 /* Info.plist */,
 			);
 			path = DECMA;
+			sourceTree = "<group>";
+		};
+		19E781CA1EE56FD10086D254 /* 引导页 */ = {
+			isa = PBXGroup;
+			children = (
+				19E781C81EE5677E0086D254 /* DECGuidePageViewController.swift */,
+			);
+			name = "引导页";
+			sourceTree = "<group>";
+		};
+		19E781CB1EE56FD80086D254 /* 顶部导航 */ = {
+			isa = PBXGroup;
+			children = (
+				19E781C61EE5671B0086D254 /* DECTopBarView.swift */,
+				19E781CC1EEE32430086D254 /* TopBarViewController.swift */,
+			);
+			name = "顶部导航";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E781CD1EEE32430086D254 /* TopBarViewController.swift in Sources */,
 				19E781B71EE567020086D254 /* ViewController.swift in Sources */,
+				19E781C71EE5671B0086D254 /* DECTopBarView.swift in Sources */,
+				19E781C91EE5677E0086D254 /* DECGuidePageViewController.swift in Sources */,
 				19E781B51EE567020086D254 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +325,7 @@
 				19E781C51EE567020086D254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
